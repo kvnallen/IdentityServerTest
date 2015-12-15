@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "SSO.Console\Server.csproj", "{87EC3971-6403-4795-BE85-9110DE58C498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSO.API", "SSO.API\SSO.API.csproj", "{14C658BE-B438-4E75-832B-DD6E30A6716B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSO.Console2", "SSO.Console2\SSO.Console2.csproj", "{0B3C1EAE-1C27-419E-9C70-B40031C4073A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87EC3971-6403-4795-BE85-9110DE58C498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87EC3971-6403-4795-BE85-9110DE58C498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87EC3971-6403-4795-BE85-9110DE58C498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87EC3971-6403-4795-BE85-9110DE58C498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C658BE-B438-4E75-832B-DD6E30A6716B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C658BE-B438-4E75-832B-DD6E30A6716B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C658BE-B438-4E75-832B-DD6E30A6716B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C658BE-B438-4E75-832B-DD6E30A6716B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3C1EAE-1C27-419E-9C70-B40031C4073A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3C1EAE-1C27-419E-9C70-B40031C4073A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3C1EAE-1C27-419E-9C70-B40031C4073A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3C1EAE-1C27-419E-9C70-B40031C4073A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
