@@ -3,11 +3,9 @@ using IdentityServer3.Core.Models;
 
 namespace SSO.ConsoleApp.Models
 {
-    public class Clients
+    public static class Clients
     {
-        public static List<Client> Get()
-        {
-            return new List<Client>
+        public static IEnumerable<Client> Get() => new List<Client>
             {
                 new Client
                 {
@@ -18,15 +16,9 @@ namespace SSO.ConsoleApp.Models
 
                     Flow = Flows.ClientCredentials,
 
-                    ClientSecrets = new List<Secret>()
-                    {
-                        new Secret("F621F470-9731-4A25-80EF-67A6F7C5F4B8".Sha256())
-                    },
+                    ClientSecrets = new List<Secret>{new Secret("F621F470-9731-4A25-80EF-67A6F7C5F4B8".Sha256())},
 
-                    AllowedScopes = new List<string>()
-                    {
-                        "api1"
-                    }
+                    AllowedScopes = new List<string>{ "api1" }
                 },
                 // human is involved
                 new Client
@@ -50,6 +42,5 @@ namespace SSO.ConsoleApp.Models
 
                 }
             };
-        }
     }
 }

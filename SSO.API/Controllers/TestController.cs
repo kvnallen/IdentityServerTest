@@ -15,7 +15,7 @@ namespace SSO.API.Controllers
         {
             var caller = User as ClaimsPrincipal;
 
-            var subjectClaim = caller.FindFirst("sub");
+            var subjectClaim = caller?.FindFirst("sub");
 
             if (subjectClaim != null)
             {
@@ -26,14 +26,12 @@ namespace SSO.API.Controllers
                     subject = subjectClaim.Value
                 });
             }
-            else
+
+            return Json(new
             {
-                return Json(new
-                {
-                    message = "OK computer",
-                    client = caller.FindFirst("client_id").Value
-                });
-            }
+                message = "OK computer",
+                client = caller.FindFirst("client_id").Value
+            });
         }
     }
 }

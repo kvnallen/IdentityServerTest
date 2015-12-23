@@ -16,6 +16,7 @@ namespace SSO.Console2.Client
             return client.RequestClientCredentialsAsync("api1").Result;
         }
 
+
         public static TokenResponse GetUserToken()
         {
             var client = new TokenClient(
