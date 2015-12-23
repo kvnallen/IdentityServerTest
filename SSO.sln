@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "SSO.Console\Server.csproj", "{87EC3971-6403-4795-BE85-9110DE58C498}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerConfigs", "ServerConfigs", "{64DB2EF9-F911-4DB4-A6C8-974759C983CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{6C8F543A-4759-4DBC-99EF-EAEFFB78E40F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DMZ", "DMZ", "{E1C4C32B-0906-40D1-9CD8-D8F8883DBE32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDMZRedirect", "ApiDMZRedirect\ApiDMZRedirect.csproj", "{6C767402-FBE6-41BF-96DC-EAC3038E87AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,10 @@ Global
 		{3145CC8C-2D52-4896-8885-7FC05DB8C56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3145CC8C-2D52-4896-8885-7FC05DB8C56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3145CC8C-2D52-4896-8885-7FC05DB8C56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C767402-FBE6-41BF-96DC-EAC3038E87AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C767402-FBE6-41BF-96DC-EAC3038E87AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C767402-FBE6-41BF-96DC-EAC3038E87AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C767402-FBE6-41BF-96DC-EAC3038E87AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,5 +61,6 @@ Global
 		{0B3C1EAE-1C27-419E-9C70-B40031C4073A} = {6C8F543A-4759-4DBC-99EF-EAEFFB78E40F}
 		{A78CDB7E-7618-46E9-B70F-558677ADFDB0} = {64DB2EF9-F911-4DB4-A6C8-974759C983CF}
 		{3145CC8C-2D52-4896-8885-7FC05DB8C56C} = {64DB2EF9-F911-4DB4-A6C8-974759C983CF}
+		{6C767402-FBE6-41BF-96DC-EAC3038E87AD} = {E1C4C32B-0906-40D1-9CD8-D8F8883DBE32}
 	EndGlobalSection
 EndGlobal

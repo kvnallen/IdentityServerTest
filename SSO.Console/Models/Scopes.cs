@@ -13,6 +13,7 @@ namespace SSO.ConsoleApp.Models
             {
                 Name = "api1"
             }
+
         };
         }
     }

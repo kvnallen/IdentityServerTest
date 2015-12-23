@@ -28,6 +28,8 @@ namespace SSO.ConsoleApp.Config
 
             factory.Register(new Registration<MeuContext>());
             factory.UserService = new Registration<IUserService, CustomUserService>();
+
+            return factory;
         }
 
         private static void ConfigureClients(IEnumerable<Client> clients, EntityFrameworkServiceOptions options)

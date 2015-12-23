@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using IdentityModel.Client;
+using System.Collections.Generic;
 
 namespace SSO.Console2.Client
 {
@@ -34,5 +35,30 @@ namespace SSO.Console2.Client
 
             Console.WriteLine(client.GetStringAsync("http://localhost:56678/test").Result);
         }
+
+       
+      /*  public static void GetUserToken(string clientId,string clienteSecret,
+                                    string usuario,string senha,string escopo)
+        {
+            
+            
+            var pairs = new List<KeyValuePair<string, string>>
+            {
+                new KeyValuePair<string, string>("clientId", "daividteste")
+            };
+
+            var content = new FormUrlEncodedContent(pairs);
+
+            var client = new HttpClient { BaseAddress = new Uri("http://localhost:52889/acesso") };
+
+            // call sync
+            var response = client.PostAsync("/api/membership/exist", content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+            }
+
+        }*/
+
+
     }
 }

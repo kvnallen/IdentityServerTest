@@ -13,6 +13,7 @@ namespace SSO.API.Controllers
     {
         public IHttpActionResult Get()
         {
+
             var caller = User as ClaimsPrincipal;
 
             var subjectClaim = caller?.FindFirst("sub");
@@ -32,6 +33,9 @@ namespace SSO.API.Controllers
                 message = "OK computer",
                 client = caller.FindFirst("client_id").Value
             });
+
         }
+
+
     }
 }

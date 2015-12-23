@@ -23,7 +23,7 @@ namespace SSO.ConsoleApp.Models
                 // human is involved
                 new Client
                 {
-                    ClientName = "Silicon on behalf of Carbon Client",
+                    ClientName = "Agendador Médico",
                     ClientId = "carbon",
                     Enabled = true,
                     AccessTokenType = AccessTokenType.Reference,
@@ -35,10 +35,7 @@ namespace SSO.ConsoleApp.Models
                         new Secret("21B5F798-BE55-42BC-8AA8-0025B903DC3B".Sha256())
                     },
 
-                    AllowedScopes = new List<string>
-                    {
-                        "api1"
-                    }
+                    AllowedScopes = new List<string>{"api1"}
 
                 }
             };
